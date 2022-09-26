@@ -12,6 +12,13 @@
       <a-tab-pane key="3" tab="文本缩小到12以下">
         <span class="minisize">我是不是很小？</span>
       </a-tab-pane>
+
+      <a-tab-pane key="4" tab="左固定右自适应">
+        <div class="futher">
+          <div class="left">1、BFC盒子，左固定宽，右不设置宽</div>
+          <div class="right">2、flex ，左固定，右100%</div>
+        </div>
+      </a-tab-pane>
     </a-tabs>
   </div>
 </template>
@@ -25,10 +32,27 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  // 文本缩小
 .minisize{
   display: inline-block;
   transform: scale(0.5);
   -webkit-transform: scale(0.5);
+}
+// 左固定右自适应
+.futher{
+  width: 1000px;
+  height: 200px;
+  
+  .left{
+    float: left;
+    width: 300px;
+    height: 200px;
+    background-color: #999;
+  }
+  .right{
+    height: 200px;
+    background-color: #ccc;
+  }
 }
 </style>

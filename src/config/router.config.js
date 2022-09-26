@@ -10,11 +10,12 @@ export const asyncRouterMap = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    title: '关于',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue')
+    path: '/CommonQA',
+    name: 'CommonQA',
+    title: '常见问答',
+    component: () => import(/* webpackChunkName: "about" */ '@/components/CommonQA.vue')
   },
+  
   {
     path: '/promise',
     name: 'Promise',
@@ -34,9 +35,15 @@ export const asyncRouterMap = [
     component: () => import(/* webpackChunkName: "about" */ '@/components/css/CssQuestions.vue')
   },
   {
-    path: '/commons',
-    name: 'commons',
+    path: '/jsNav',
+    name: 'jsNav',
     title: '常见JS',
-    component: () => import(/* webpackChunkName: "about" */ '@/components/js/commons.vue')
+    component: () => import(/* webpackChunkName: "about" */ '@/components/js/jsNav.vue')
+  },
+  {
+    path: '/vuex',
+    name: 'vuex',
+    title: 'vuex',
+    component: () => import(/* webpackChunkName: "about" */ '@/components/vue/vuex.vue')
   }
 ]

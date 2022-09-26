@@ -11,7 +11,8 @@ import Navs from '@/tools/navs.vue'
 export default {
   components:{
     Navs
-  }
+  },
+  
 }
 </script>
 

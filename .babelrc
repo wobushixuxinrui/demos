@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    ["prismjs", {
+      "languages": ["javascript", "css", "html", "markup"],
+      "plugins": ["line-numbers"],
+      "theme": "solarizedlight",  // 主题库参照 https://prismjs.com/
+      "css": true
+    }]
+  ]
+}

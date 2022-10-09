@@ -25,7 +25,7 @@ export default {
 .main{
   z-index: 9999;
   background-color: rgb(247, 247, 247);
-  width: 200px;
+  width: 130px;
   position: fixed;
   right: 0;
   top: 0;

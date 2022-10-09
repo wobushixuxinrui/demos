@@ -29,6 +29,21 @@ Vue.prototype.$throttle_ = function (fn, wait) {
   }
 }
 
+let cando = true
+function look(){
+  if(cando){
+    cando = false
+    setTimeout(()=>{
+      console.log(222)
+        cando = true // 一秒后 cando 才会变成true，，，，，cando变成true才能执行
+    }, 1000)
+  }
+}
+
+
+
+
+
 /**
  * 空数据判断
  * exist存在

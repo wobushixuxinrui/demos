@@ -20,3 +20,12 @@ git reset --soft HEAD^
 
 重新编辑commit 
 git commit --amend
+
+
+
+### 其他记录内容
+
+::v-deep   let 定义的变量不会绑定到window上      反之var会
+
+
+iterable字面意思：可迭代的，可重复的

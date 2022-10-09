@@ -43,7 +43,10 @@
       </div>
     </div>
 
-    详情看源码
+
+    justify-content: center; 水平左右 <br />
+
+    align-items: center; 垂直上下
   </div>
 </template>
 

@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <Navs />
-      <!-- <router-link to="/about">About</router-link> -->
 
-    <router-view/>
+
+    <div class="left">
+      <router-view/>
+    </div>
   </div>
 </template>
 <script>
@@ -17,5 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.left{
+  margin: 12px 140px 12px 12px;
+}
 </style>

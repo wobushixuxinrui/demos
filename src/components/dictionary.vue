@@ -35,6 +35,18 @@ export default {
         {
           title:'数组查出现次数',
           link:'/linkComponents/arrayEngine'
+        },
+        {
+          title:'深拷贝',
+          link:'/linkComponents/cloneDeep'
+        },
+        {
+          title:'懒加载',
+          link:'/linkComponents/imgLazyLoad'
+        },
+        {
+          title:'下拉加载',
+          link:'/linkComponents/lazyScroll'
         }
       ]
     }

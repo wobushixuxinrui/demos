@@ -29,3 +29,23 @@ git commit --amend
 
 
 iterable字面意思：可迭代的，可重复的
+
+
+### 一个需要注意的地方是，如果参数默认值是一个变量，则该变量所处的作用域，与其他变量的作用域规则是一样的，即先是当前函数的作用域，然后才是全局作用域。
+```
+  var x = 1;
+
+  function f(x, y = x) {
+    console.log(y);
+  }
+
+  f(2) // 2
+```
+
+### 尾递归优化过的fibonacci 递归算法
+
+function Fibonacci2 (n , ac1 = 1 , ac2 = 1) {
+  if( n <= 1 ) {return ac2};
+
+  return Fibonacci2 (n - 1, ac2, ac1 + ac2);
+}

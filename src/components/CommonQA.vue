@@ -58,10 +58,17 @@
           </pre>
       </a-tab-pane>
       <a-tab-pane key="2" tab="性能优化">
-        1、减少请求     <br />
-        2、资源压缩     <br />
-        3、懒加载     <br />
-        4、JS性能
+        、减少请求     <br />
+        、文件合并
+        、资源压缩     <br />
+        、懒加载     <br />  ？？？
+        、JS性能
+        引用cdn   cdn 大文件不会阻塞
+        减少dom 操作
+        分包， ：加快主页
+
+
+        真性能：页面加载、动画操作、内存占用
       </a-tab-pane>
       <a-tab-pane key="3" tab="图片懒加载">
         <router-link to="/imgLazyLoad">demo</router-link>
@@ -113,7 +120,16 @@
 
 
       </a-tab-pane>
-      <a-tab-pane key="7" tab="ooooooooooo">
+      <a-tab-pane key="7" tab="箭头函数和普通函数">
+        <pre>
+          <code class="language-html" >
+            箭头根据外层（函数或全局）的作用域来决定 this
+            箭头函数常用于回调函数中，包括事件处理器或定时器
+            箭头函数和 var self = this，都试图取代传统的 this 运行机制，将 this 的绑定拉回到词法作用域
+            没有原型、没有 this、没有 super，没有 arguments，没有 new.target
+            不能通过 new 关键字调用
+          </code>
+        </pre>
       </a-tab-pane>
       <a-tab-pane key="8" tab="ooooooooooo">
       </a-tab-pane>

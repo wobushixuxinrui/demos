@@ -21,7 +21,7 @@ const writes = [
 
 export const links = [
   {
-    path: '/imgLazyLoad',
+    path: '/linkComponents/imgLazyLoad',
     name: 'imgLazyLoad',
     title: '图片懒加载',
     component: () => import('@/linkComponents/imgLazyLoad.vue')
@@ -55,6 +55,18 @@ export const links = [
     name: 'arrayEngine',
     title: '数组查出现次数',
     component: () => import('@/linkComponents/arrayEngine.vue')
+  },
+  {
+    path: '/linkComponents/cloneDeep',
+    name: 'cloneDeep',
+    title: '深拷贝',
+    component: () => import('@/linkComponents/cloneDeep.vue')
+  },
+  {
+    path: '/linkComponents/lazyScroll',
+    name: 'lazyScroll',
+    title: '下拉加载',
+    component: () => import('@/linkComponents/lazyScroll.vue')
   },
   
   ...vues,

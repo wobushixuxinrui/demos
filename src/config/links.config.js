@@ -5,6 +5,18 @@ const vues = [
     name: 'mixin',
     title: 'mixin混入',
     component: () => import('@/components/vue/mixin.vue')
+  },
+  {
+    path: '/components/vue/vueOptimization',
+    name: 'vueOptimization',
+    title: 'vue优化',
+    component: () => import('@/components/vue/vueOptimization.vue')
+  },
+  {
+    path: '/components/vue/vueDirective',
+    name: 'vueDirective',
+    title: 'vue自定义指令',
+    component: () => import('@/components/vue/vueDirective.vue')
   }
 ]
 
@@ -15,6 +27,12 @@ const writes = [
     name: 'writeNew',
     title: '手撕new',
     component: () => import('@/linkComponents/writeNew.vue')
+  },
+  {
+    path: '/linkComponents/writePromise',
+    name: 'writePromise',
+    title: '手撕promise',
+    component: () => import('@/linkComponents/writePromise.vue')
   }
 ]
 

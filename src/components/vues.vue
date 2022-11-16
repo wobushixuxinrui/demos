@@ -16,6 +16,14 @@ export default {
         {
           title:'mixin混入',
           link:'/components/vue/mixin'
+        },
+        {
+          title:'ue优化',
+          link:'/components/vue/vueOptimization'
+        },
+        {
+          title:'自定义指令',
+          link:'/components/vue/vueDirective'
         }
       ]
     }

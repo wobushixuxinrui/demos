@@ -49,3 +49,17 @@ function Fibonacci2 (n , ac1 = 1 , ac2 = 1) {
 
   return Fibonacci2 (n - 1, ac2, ac1 + ac2);
 }
+
+### 科里？？？？
+function shin(){		
+  const args = Array.prototype.slice.call(arguments)
+  console.log('args',args)
+  const inner = () => {
+    console.log('...arguments',arguments)
+    args.push(...arguments)
+    console.log('inner',inner)
+    return inner
+  }
+  return inner
+}
+shin(1,2,3)(4,5)(6,7,8,9)

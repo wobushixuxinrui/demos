@@ -131,9 +131,24 @@
           </code>
         </pre>
       </a-tab-pane>
-      <a-tab-pane key="8" tab="ooooooooooo">
+      <a-tab-pane key="8" tab="闭包">
+        <pre>
+          <code class="language-html" >
+          避免变量被污染
+          私有化
+          保存变量常驻内存
+
+          闭包常用于库的封装
+          </code>
+        </pre>
       </a-tab-pane>
-      <a-tab-pane key="9" tab="ooooooooooo">
+      <a-tab-pane key="9" tab="mvvm">
+      </a-tab-pane>
+      <a-tab-pane key="10" tab="ooooo">
+      </a-tab-pane>
+      <a-tab-pane key="11" tab="oooooooo">
+      </a-tab-pane>
+      <a-tab-pane key="12" tab="oooooooo">
       </a-tab-pane>
     </a-tabs>
   </div>

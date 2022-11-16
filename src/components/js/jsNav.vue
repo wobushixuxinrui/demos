@@ -7,7 +7,7 @@
       <a-tab-pane key="2" tab="CallApplyBind">
         <CallApply />
       </a-tab-pane>
-      <a-tab-pane key="3" tab="构造函数">
+      <a-tab-pane key="3" tab="原型链">
         <Constructor />
       </a-tab-pane>
       <a-tab-pane key="4" tab="数组">
@@ -20,13 +20,14 @@
         <Object />
       </a-tab-pane>
       <a-tab-pane key="7" tab="this指向">
-        指向它上一层空间【上一个调用者】
+        <Mythis />
       </a-tab-pane>
     </a-tabs>
   </div>
 </template>
 
 <script>
+import Mythis from  '@/components/js/Mythis.vue'
 import Object from  '@/components/js/Object.vue'
 import Classs from  '@/components/js/Class.vue'
 import Constructor from '@/components/js/Constructor.vue'
@@ -36,6 +37,7 @@ import Arrays from '@/components/js/Arrays.vue'
 
 export default {
   components:{
+    Mythis,
     Object,
     Classs,
     CallApply,

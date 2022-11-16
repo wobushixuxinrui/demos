@@ -7,14 +7,16 @@
     <pre>
       <code class="language-js line-numbers" >
         let dog = {
-          name:'我不是狗',
+          name:'我原来是狗',
           eat(food){
-            console.log('我偶尔吃' + food)
+            console.log(this.name+'我现在吃' + food)
           }
         }
         let cat = {
-          name:'我原来是狗，，我用call变成了猫'
+          name:'我原来是狗，我用call变成了猫:'
         }
+
+        dog.eat.call(cat, '鱼','虾')
 
         
         -------------------------------------

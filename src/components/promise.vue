@@ -1,5 +1,7 @@
 <template>
   <div class="main">
+    <a-button @click="links" type="">链式调用</a-button> 
+
     <a-button @click="basePromise" type="">基础promise</a-button> 
 
     <a-button @click="promiseAll" type="">promise All</a-button>
@@ -23,6 +25,33 @@ export default {
     return{}
   },
   methods: {
+    // 链式调用
+    links(){
+      // 链式调用示例
+      let is = true
+      let getLv = new Promise((resolve,reject)=>{
+        if(is){
+          resolve({
+            color:'black'
+          })
+        }else {
+          reject(new Error('err'))
+        }
+      })
+      let byLip = (lv)=>{
+        return Promise.resolve({
+          lv,
+          message:'芭比蓝' + lv.color
+        })
+      }
+      let res = ()=>{
+        getLv.then(byLip).then(res =>{
+          console.log(res)
+        })
+      }
+      res()
+    },
+
     // 基础 promise
     basePromise () {
       const randomNum = Math.random(100) * 100

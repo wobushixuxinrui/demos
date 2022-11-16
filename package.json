@@ -2,9 +2,12 @@
   "name": "webnotes",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "description": "scripts.lib是单独打包插件的配置 || private设置城false设置成公有 || license 不知道干啥的也得有",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib  --dest lib src/components/index.js"
   },
   "dependencies": {
     "ant-design-vue": "^1.7.3",

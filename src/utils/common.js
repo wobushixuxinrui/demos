@@ -154,3 +154,9 @@ export const numberInput = {
 
 
 export const thismonth = `${new Date().getFullYear()}-${parseFloat(new Date().getMonth() + 1) > 9 ? parseFloat(new Date().getMonth() + 1) : '0' + parseFloat(new Date().getMonth() + 1)}`
+
+const shin = 'shin'
+
+export {
+  shin
+}

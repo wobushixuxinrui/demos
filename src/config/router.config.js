@@ -62,7 +62,7 @@ export const asyncRouterMap = [
   {
     path: '/components/vues',
     name: 'vues',
-    title: '常见vue',
+    title: '常见vue【vue2】',
     component: () => import(/* webpackChunkName: "about" */ '@/components/vues.vue')
   },
   {
@@ -70,5 +70,11 @@ export const asyncRouterMap = [
     name: 'Handwrite',
     title: '手撕大全',
     component: () => import(/* webpackChunkName: "about" */ '@/components/Handwrite.vue')
+  },
+  {
+    path: '/components/trap',
+    name: 'trap',
+    title: '常见陷阱',
+    component: () => import(/* webpackChunkName: "about" */ '@/components/trap.vue')
   }
 ]
